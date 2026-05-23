@@ -10,9 +10,9 @@ load_dotenv()
 # ================================================================
 # 🎵 CORE BOT CONFIGURATION (Get from my.telegram.org)
 # ================================================================
-API_ID = int(getenv("API_ID", "33591348")) 
-API_HASH = getenv("d138b2ec1432ef7da497e8e3d451140b")
-BOT_TOKEN = getenv("8618018315:AAFY2IsKY2DJ20TJuOKVgPEAxKheTUY5YPY")
+API_ID = int(getenv("API_ID", "0")) 
+API_HASH = getenv("API_HASH", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 # ================================================================
 # 🗄️ DATABASE & STORAGE (MongoDB URI)
@@ -79,8 +79,8 @@ SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "500"))
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "500"))
 
 # Spotify Integration
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "19609edb1b9f4ed7be0c8c1342039362")
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "409e31d3ddd64af08cfcc3b0f064fcbe")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "")
 
 # ================================================================
 # 🤖 BOT MODES & FEATURES
