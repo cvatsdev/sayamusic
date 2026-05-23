@@ -1,11 +1,3 @@
-#
-# Copyright (C) 2024 by THE-VIP-BOY-OP@Github, < https://github.com/THE-VIP-BOY-OP >.
-#
-# This file is part of < https://github.com/THE-VIP-BOY-OP/VIP-MUSIC > project,
-# and is released under the MIT License.
-# Please see < https://github.com/THE-VIP-BOY-OP/VIP-MUSIC/blob/master/LICENSE >
-#
-# All rights reserved.
 import asyncio
 import importlib
 
@@ -59,10 +51,10 @@ async def init():
     await userbot.start()
     await VIP.start()
     await VIP.decorators()
-    LOGGER("VIPMUSIC").info("NOBITAMUSIC STARTED SUCCESSFULLY 🕊️")
+    LOGGER("Saya").info("Saya Assistant Started")
     await idle()
 
 
 if __name__ == "__main__":
     asyncio.get_event_loop_policy().get_event_loop().run_until_complete(init())
-    LOGGER("VIPMUSIC").info("Stopping VIPMUSIC! CHAL NIKAL LAUDE")
+    LOGGER("Saya").info("Saya Assistant Started")
