@@ -1,14 +1,3 @@
-#
-# Copyright (C) 2024 by THE-VIP-BOY-OP@Github, < https://github.com/THE-VIP-BOY-OP >.
-#
-# This file is part of < https://github.com/THE-VIP-BOY-OP/VIP-MUSIC > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/THE-VIP-BOY-OP/VIP-MUSIC/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
-
 from typing import Callable, Optional
 
 import pyrogram
@@ -65,16 +54,16 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("ll_NOBITA_BOT_DEVLOPER_ll")
-                await self.one.join_chat("NOBITA_BOT_MAKER_STATUS")
-                await self.one.join_chat("NOBITA_SUPPORT")
-                await self.one.join_chat("NOBITA_ALL_BOT")
+                await self.one.join_chat("SayaProject")
+                await self.one.join_chat("SayaProject")
+                await self.one.join_chat("SayaProject")
+                await self.one.join_chat("SayaProject")
             except:
                 pass
             assistants.append(1)
             clients.append(self.one)
             try:
-                await self.one.send_message(config.LOG_GROUP_ID, "Assistant Started")
+                await self.one.send_message(config.LOG_GROUP_ID, "Saya Assistant Started")
             except:
                 LOGGER(__name__).info(
                     f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
@@ -89,20 +78,20 @@ class Userbot(Client):
                 self.one.name = get_me.first_name + " " + get_me.last_name
             else:
                 self.one.name = get_me.first_name
-            LOGGER(__name__).info(f"Assistant Started as {self.one.name}")
+            LOGGER(__name__).info(f"Saya Assistant Started {self.one.name}")
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("ll_NOBITA_BOT_DEVLOPER_ll")
-                await self.two.join_chat("NOBITA_SUPPORT")
-                await self.two.join_chat("NOBITA_ALL_BOT")
-                await self.two.join_chat("NOBITA_BOT_MAKER_STATUS")
+                await self.two.join_chat("SayaProject")
+                await self.two.join_chat("SayaProject")
+                await self.two.join_chat("SayaProject")
+                await self.two.join_chat("SayaProject")
             except:
                 pass
             assistants.append(2)
             clients.append(self.two)
             try:
-                await self.two.send_message(config.LOG_GROUP_ID, "Assistant Started")
+                await self.two.send_message(config.LOG_GROUP_ID, "Saya Assistant Started")
             except:
                 LOGGER(__name__).error(
                     f"Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
@@ -121,16 +110,16 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("ll_NOBITA_BOT_DEVLOPER_ll")
-                await self.three.join_chat("NOBITA_BOT_MAKER_STATUS")
-                await self.three.join_chat("NOBITA_SUPPORT")
-                await self.three.join_chat("NOBITA_ALL_BOT")
+                await self.three.join_chat("SayaProject")
+                await self.three.join_chat("SayaProject")
+                await self.three.join_chat("SayaProject")
+                await self.three.join_chat("SayaProject")
             except:
                 pass
             assistants.append(3)
             clients.append(self.three)
             try:
-                await self.three.send_message(config.LOG_GROUP_ID, "Assistant Started")
+                await self.three.send_message(config.LOG_GROUP_ID, "Saya Assistant Started")
             except:
                 LOGGER(__name__).error(
                     f"Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
@@ -149,16 +138,16 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("NOBITA_ALL_BOT")
-                await self.four.join_chat("ll_NOBITA_BOT_DEVLOPER_ll")
-                await self.four.join_chat("NOBITA_SUPPORT")
-                await self.four.join_chat("NOBITA_BOT_MAKER_STATUS")
+                await self.four.join_chat("SayaProject")
+                await self.four.join_chat("SayaProject")
+                await self.four.join_chat("SayaProject")
+                await self.four.join_chat("SayaProject")
             except:
                 pass
             assistants.append(4)
             clients.append(self.four)
             try:
-                await self.four.send_message(config.LOG_GROUP_ID, "Assistant Started")
+                await self.four.send_message(config.LOG_GROUP_ID, "Saya Assistant Started")
             except:
                 LOGGER(__name__).error(
                     f"Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
@@ -177,16 +166,16 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("NOBITA_BOT_MAKER_STATUS")
-                await self.five.join_chat("NOBITA_SUPPORT")
-                await self.five.join_chat("NOBITA_ALL_BOT")
-                await self.five.join_chat("ll_NOBITA_BOT_DEVLOPER_ll")
+                await self.five.join_chat("SayaProject")
+                await self.five.join_chat("SayaProject")
+                await self.five.join_chat("SayaProject")
+                await self.five.join_chat("SayaProject")
             except:
                 pass
             assistants.append(5)
             clients.append(self.five)
             try:
-                await self.five.send_message(config.LOG_GROUP_ID, "Assistant Started")
+                await self.five.send_message(config.LOG_GROUP_ID, "Saya Assistant Started")
             except:
                 LOGGER(__name__).error(
                     f"Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
