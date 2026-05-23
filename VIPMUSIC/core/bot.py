@@ -1,11 +1,3 @@
-#
-# Copyright (C) 2021-2022 by KIRU-OP@Github, < https://github.com/KIRU-OP >.
-#
-# This file is part of < https://github.com/KIRU-OP/VIPMUSIC > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/KIRU-OP/VIPMUSIC/blob/master/LICENSE >
-#
-# All rights reserved.
 import asyncio
 import uvloop
 
@@ -74,7 +66,7 @@ class VIPBot(Client):
                 await self.send_photo(
                     config.LOG_GROUP_ID,
                     photo=config.START_IMG_URL,
-                    caption=f"╔════❰𝐖𝐄𝐋𝐂𝐎𝐌𝐄❱════❍⊱❁۪۪\n║\n║┣⪼🥀𝐁𝐨𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐁𝐚𝐛𝐲🎉\n║\n║┣⪼ {self.name}\n║\n║┣⪼🎈𝐈𝐃:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠😍\n║\n╚════════════════❍⊱❁",
+                    caption=f"Hey\n║\n║┣⪼Saya Started\n║\n║┣⪼ {self.name}\n║\n║┣⪼ID:- `{self.id}` \n║\n║┣⪼@{self.username} \n║ \n║┣⪼SAYA\n║\n❁",
                     reply_markup=button,
                 )
             except pyrogram.errors.ChatWriteForbidden as e:
@@ -82,7 +74,7 @@ class VIPBot(Client):
                 try:
                     await self.send_message(
                         config.LOG_GROUP_ID,
-                        f"╔═══❰𝐖𝐄𝐋𝐂𝐎𝐌𝐄❱═══❍⊱❁۪۪\n║\n║┣⪼🥀𝐁𝐨𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐁𝐚𝐛𝐲🎉\n║\n║◈ {self.name}\n║\n║┣⪼🎈𝐈𝐃:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠😍\n║\n╚══════════════❍⊱❁",
+                        f"Hey\n║\n║┣⪼Saya Started\n║\n║◈ {self.name}\n║\n║┣⪼ID:- `{self.id}` \n║\n║┣⪼@{self.username} \n║ \n║┣⪼SAYA\n║\n❁",
                         reply_markup=button,
                     )
                 except Exception as e:
@@ -101,52 +93,52 @@ class VIPBot(Client):
             try:
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("start", "Start the bot"),
-                        BotCommand("help", "Get the help menu"),
-                        BotCommand("ping", "Check if the bot is alive or dead"),
+                        BotCommand("start", "sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ"),
+                        BotCommand("help", "ɢᴇᴛ ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ"),
+                        BotCommand("ping", "ᴄʜᴇᴄᴋ ɪғ ᴛʜᴇ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ"),
                     ],
                     scope=BotCommandScopeAllPrivateChats(),
                 )
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("play", "Start playing requested song"),
-                        BotCommand("stop", "Stop the current song"),
-                        BotCommand("pause", "Pause the current song"),
-                        BotCommand("resume", "Resume the paused song"),
-                        BotCommand("queue", "Check the queue of songs"),
-                        BotCommand("skip", "Skip the current song"),
-                        BotCommand("volume", "Adjust the music volume"),
-                        BotCommand("lyrics", "Get lyrics of the song"),
+                        BotCommand("play", "sᴛᴀʀᴛ ᴘʟᴀʏɪɴɢ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ"),
+                        BotCommand("stop", "sᴛᴏᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴏɴɢg"),
+                        BotCommand("pause", "ᴘᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴏɴɢ"),
+                        BotCommand("resume", "ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴘᴀᴜsᴇᴅ sᴏɴɢ"),
+                        BotCommand("queue", "ᴄʜᴇᴄᴋ ᴛʜᴇ ǫᴜᴇᴜᴇ ᴏғ sᴏɴɢs"),
+                        BotCommand("skip", "sᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴏɴɢ"),
+                        BotCommand("volume", "ᴀᴅᴊᴜsᴛ ᴛʜᴇ ᴍᴜsɪᴄ ᴠᴏʟᴜᴍᴇ"),
+                        BotCommand("lyrics", "ɢᴇᴛ ʟʏʀɪᴄs ᴏғ ᴛʜᴇ sᴏɴɢ"),
                     ],
                     scope=BotCommandScopeAllGroupChats(),
                 )
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("start", "❥ Start the bot"),
-                        BotCommand("ping", "❥ Check the ping"),
-                        BotCommand("help", "❥ Get help"),
-                        BotCommand("vctag", "❥ Tag all for voice chat"),
-                        BotCommand("stopvctag", "❥ Stop tagging for VC"),
-                        BotCommand("tagall", "❥ Tag all members by text"),
-                        BotCommand("cancel", "❥ Cancel the tagging"),
-                        BotCommand("settings", "❥ Get the settings"),
-                        BotCommand("reload", "❥ Reload the bot"),
-                        BotCommand("play", "❥ Play the requested song"),
-                        BotCommand("vplay", "❥ Play video along with music"),
-                        BotCommand("end", "❥ Empty the queue"),
-                        BotCommand("playlist", "❥ Get the playlist"),
-                        BotCommand("stop", "❥ Stop the song"),
-                        BotCommand("lyrics", "❥ Get the song lyrics"),
-                        BotCommand("song", "❥ Download the requested song"),
-                        BotCommand("video", "❥ Download the requested video song"),
-                        BotCommand("gali", "❥ Reply with fun"),
-                        BotCommand("shayri", "❥ Get a shayari"),
-                        BotCommand("love", "❥ Get a love shayari"),
-                        BotCommand("sudolist", "❥ Check the sudo list"),
-                        BotCommand("owner", "❥ Check the owner"),
-                        BotCommand("update", "❥ Update bot"),
-                        BotCommand("gstats", "❥ Get stats of the bot"),
-                        BotCommand("repo", "❥ Check the repo"),
+                        BotCommand("start", "sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ"),
+                        BotCommand("ping", "ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ"),
+                        BotCommand("help", "ɢᴇᴛ ʜᴇʟᴘ"),
+                        BotCommand("vctag", "ᴛᴀɢ ᴀʟʟ ғᴏʀ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ"),
+                        BotCommand("stopvctag", "sᴛᴏᴘ ᴛᴀɢɢɪɴɢ ғᴏʀ ᴠᴄ"),
+                        BotCommand("tagall", "ᴛᴀɢ ᴀʟʟ ᴍᴇᴍʙᴇʀs ʙʏ ᴛᴇxᴛ"),
+                        BotCommand("cancel", "ᴄᴀɴᴄᴇʟ ᴛʜᴇ ᴛᴀɢɢɪɴɢ"),
+                        BotCommand("settings", "ɢᴇᴛ ᴛʜᴇ sᴇᴛᴛɪɴɢs"),
+                        BotCommand("reload", "ʀᴇʟᴏᴀᴅ ᴛʜᴇ ʙᴏᴛ"),
+                        BotCommand("play", "ᴘʟᴀʏ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ"),
+                        BotCommand("vplay", "ᴘʟᴀʏ ᴠɪᴅᴇᴏ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴍᴜsɪᴄ"),
+                        BotCommand("end", "ᴇᴍᴘᴛʏ ᴛʜᴇ ǫᴜᴇᴜᴇ"),
+                        BotCommand("playlist", "ɢᴇᴛ ᴛʜᴇ ᴘʟᴀʏʟɪsᴛ"),
+                        BotCommand("stop", "sᴛᴏᴘ ᴛʜᴇ sᴏɴɢ"),
+                        BotCommand("lyrics", "ɢᴇᴛ ᴛʜᴇ sᴏɴɢ ʟʏʀɪᴄs"),
+                        BotCommand("song", "ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ"),
+                        BotCommand("video", "ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ᴠɪᴅᴇᴏ sᴏɴɢ"),
+                        BotCommand("gali", "ʀᴇᴘʟʏ ᴡɪᴛʜ ғᴜɴ"),
+                        BotCommand("shayri", "ɢᴇᴛ ᴀ sʜᴀʏᴀʀɪi"),
+                        BotCommand("love", "ɢᴇᴛ ᴀ ʟᴏᴠᴇ sʜᴀʏᴀʀɪ"),
+                        BotCommand("sudolist", "ᴄʜᴇᴄᴋ ᴛʜᴇ sᴜᴅᴏ ʟɪsᴛ"),
+                        BotCommand("owner", "ᴄʜᴇᴄᴋ ᴛʜᴇ ᴏᴡɴᴇʀ"),
+                        BotCommand("update", "ᴜᴘᴅᴀᴛᴇ ʙᴏᴛ"),
+                        BotCommand("gstats", "ɢᴇᴛ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ"),
+                        BotCommand("repo", "ᴄʜᴇᴄᴋ ᴛʜᴇ ʀᴇᴘᴏ"),
                     ],
                     scope=BotCommandScopeAllChatAdministrators(),
                 )
@@ -161,9 +153,9 @@ class VIPBot(Client):
                 )
                 if chat_member_info.status != ChatMemberStatus.ADMINISTRATOR:
                     LOGGER(__name__).error(
-                        "Please promote Bot as Admin in Logger Group"
+                        "Saya"
                     )
             except Exception as e:
-                LOGGER(__name__).error(f"Error occurred while checking bot status: {e}")
+                LOGGER(__name__).error(f"Saya Bug: {e}")
 
-        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+        LOGGER(__name__).info(f"Saya {self.name}")
