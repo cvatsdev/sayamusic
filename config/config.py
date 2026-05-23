@@ -10,8 +10,8 @@ load_dotenv()
 # ================================================================
 # 🎵 CORE BOT CONFIGURATION (Get from my.telegram.org)
 # ================================================================
-API_ID = int(getenv("API_ID", "22421379")) 
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "33591348")) 
+API_HASH = getenv("d138b2ec1432ef7da497e8e3d451140b")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # ================================================================
@@ -26,7 +26,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 EXTRA_PLUGINS = getenv("EXTRA_PLUGINS", "True")
 
 # External plugins repository link
-EXTRA_PLUGINS_REPO = getenv("EXTRA_PLUGINS_REPO", "https://github.com/KIRU-OP/Extra-Plugin")
+EXTRA_PLUGINS_REPO = getenv("EXTRA_PLUGINS_REPO", "https://github.com/cvatsdev/sayamusic")
 
 # Folder name in your extra plugins repo
 EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
@@ -35,8 +35,8 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 # ⚙️ BOT LIMITS & TIMEOUTS
 # ================================================================
 CLEANMODE_DELETE_MINS = int(getenv("CLEANMODE_MINS", "5")) 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "3000"))
-SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "1000"))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "30000000000000"))
+SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "1000000000000000"))
 
 # Video & Audio file size limits
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "1073741824"))
@@ -49,22 +49,22 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 # ================================================================
 # 👥 OWNER & PERMISSIONS
 # ================================================================
-OWNER_ID = list(map(int, getenv("OWNER_ID", "6972508083").split()))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002223516578"))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "1329546526").split()))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1003802701610"))
 
 # ================================================================
 # 🌐 SOCIALS & REPO LINKS
 # ================================================================
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/about_deadly_venom")
-SUPPORT_GROUP = getenv("BOYS_STATUS_GROUP", "https://t.me/+Iol40Zc_6bRlZmNl")
-SUPPORT_CHAT = getenv("SUPPORT_GROUP", "https://t.me/+Iol40Zc_6bRlZmNl")
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/KIRU-OP/VIP-MUSIC")
-PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-VIPMUSIC-08-30")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SayaProject")
+SUPPORT_GROUP = getenv("BOYS_STATUS_GROUP", "https://t.me/SayaProject")
+SUPPORT_CHAT = getenv("SUPPORT_GROUP", "https://t.me/SayaProject")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/cvatsdev/sayamusic")
+PRIVACY_LINK = getenv("PRIVACY_LINK", "https://t.me/SayaProject")
 
 # ================================================================
 # 🚀 UPSTREAM & DEPLOYMENT
 # ================================================================
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/lll-DEADLY-VENOM-lll/VIPMUSIC")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/cvatsdev/sayamusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
 
@@ -104,21 +104,21 @@ STRING5 = getenv("STRING_SESSION5", None)
 # ================================================================
 # 🖼️ VISUALS (Images)
 # ================================================================
-BASE_IMG = "https://envs.sh/BjZ.jpg"
+BASE_IMG = "https://files.catbox.moe/78izhp.jpg"
 
-START_IMG_URL = getenv("START_IMG_URL", "https://envs.sh/BjZ.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "https://envs.sh/BjZ.jpg")
-PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://envs.sh/BjZ.jpg")
-GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://envs.sh/BjZ.jpg")
-STATS_IMG_URL = getenv("STATS_IMG_URL", "https://envs.sh/BjZ.jpg")
-TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://envs.sh/BjZ.jpg")
-TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://envs.sh/BjZ.jpg")
-STREAM_IMG_URL = getenv("STREAM_IMG_URL", "https://envs.sh/BjZ.jpg")
-SOUNCLOUD_IMG_URL = getenv("SOUNCLOUD_IMG_URL", "https://envs.sh/BjZ.jpg")
-YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "https://envs.sh/BjZ.jpg")
-SPOTIFY_ARTIST_IMG_URL = getenv("SPOTIFY_ARTIST_IMG_URL", "https://envs.sh/BjZ.jpg")
-SPOTIFY_ALBUM_IMG_URL = getenv("SPOTIFY_ALBUM_IMG_URL", "https://envs.sh/BjZ.jpg")
-SPOTIFY_PLAYLIST_IMG_URL = getenv("SPOTIFY_PLAYLIST_IMG_URL", "https://envs.sh/BjZ.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+STATS_IMG_URL = getenv("STATS_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://files.catbox.moe/78izhp.jpg")
+TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://files.catbox.moe/78izhp.jpg")
+STREAM_IMG_URL = getenv("STREAM_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+SOUNCLOUD_IMG_URL = getenv("SOUNCLOUD_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+SPOTIFY_ARTIST_IMG_URL = getenv("SPOTIFY_ARTIST_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+SPOTIFY_ALBUM_IMG_URL = getenv("SPOTIFY_ALBUM_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
+SPOTIFY_PLAYLIST_IMG_URL = getenv("SPOTIFY_PLAYLIST_IMG_URL", "https://files.catbox.moe/78izhp.jpg")
 
 # ================================================================
 # 🛠️ INTERNAL SYSTEM (Don't Touch)
@@ -126,7 +126,7 @@ SPOTIFY_PLAYLIST_IMG_URL = getenv("SPOTIFY_PLAYLIST_IMG_URL", "https://envs.sh/B
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "VIPlogs.txt"
+LOG_FILE_NAME = "Saya.txt"
 TEMP_DB_FOLDER = "tempdb"
 adminlist = {}
 lyrical = {}
@@ -147,4 +147,4 @@ for url_val in [SUPPORT_CHANNEL, SUPPORT_GROUP, UPSTREAM_REPO, GITHUB_REPO]:
     if url_val and not re.match(r"(?:http|https)://", url_val):
         print(f"[ERROR] - URL '{url_val}' is invalid!")
 
-print("✅ Config Updated & Loaded!")
+print("Saya")
