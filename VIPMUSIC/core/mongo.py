@@ -1,11 +1,3 @@
-#
-# Copyright (C) 2021-2022 by KIRU-OP@Github, < https://github.com/KIRU-OP >.
-#
-# This file is part of < https://github.com/KIRU-OP/VIPMUSIC > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/KIRU-OP/VIPMUSIC/blob/master/LICENSE >
-#
-# All rights reserved.
 import sys
 from motor.motor_asyncio import AsyncIOMotorClient as _mongo_client_
 from pymongo import MongoClient
@@ -16,7 +8,7 @@ import config
 from ..logging import LOGGER
 
 # Fallback Database URL
-TEMP_MONGODB = "mongodb+srv://vishalpandeynkp:Bal6Y6FZeQeoAoqV@cluster0.dzgwt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+TEMP_MONGODB = ""
 
 def initialize_database():
     global mongodb, pymongodb
