@@ -34,7 +34,7 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 # ================================================================
 # ⚙️ BOT LIMITS & TIMEOUTS
 # ================================================================
-CLEANMODE_DELETE_MINS = int(getenv("CLEANMODE_MINS", "5")) 
+CLEANMODE_DELETE_MINS = int(getenv("CLEANMODE_MINS", "2")) 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "30000000000000"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "1000000000000000"))
 
