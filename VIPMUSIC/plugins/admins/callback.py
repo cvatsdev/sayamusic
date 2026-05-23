@@ -155,7 +155,7 @@ async def unban_assistant(_, callback: CallbackQuery):
     try:
         await app.unban_chat_member(chat_id, userbot.id)
         await callback.answer(
-            "SayaUnban\n\nɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ sᴏɴɢ\n\n",
+            "SayaUnban\n\nɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ sᴏɴɢ\n\Thxxn",
             show_alert=True,
         )
     except Exception as e:
