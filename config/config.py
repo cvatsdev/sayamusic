@@ -12,7 +12,7 @@ load_dotenv()
 # ================================================================
 API_ID = int(getenv("API_ID", "33591348")) 
 API_HASH = getenv("d138b2ec1432ef7da497e8e3d451140b")
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("8618018315:AAFY2IsKY2DJ20TJuOKVgPEAxKheTUY5YPY")
 
 # ================================================================
 # 🗄️ DATABASE & STORAGE (MongoDB URI)
